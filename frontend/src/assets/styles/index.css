@@ -195,3 +195,18 @@ table th {
   /* border: 1px solid; */
   margin-top: -20px;
 }
+
+.demo-btn-container {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+.demo-btn {
+  all: unset;
+  padding: 0.7rem;
+  background-color: #354a5e;
+  color: #fff;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+}
