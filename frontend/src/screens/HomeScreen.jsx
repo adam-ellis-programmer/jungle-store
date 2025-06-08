@@ -60,7 +60,7 @@ const HomeScreen = () => {
       ) : (
         <>
           <Meta />
-          <h1 className='home-h1'>our Products</h1>
+          <h1 className='home-h1'>our products</h1>
           <div className='paginate-custom-container'>
             <Paginate
               pages={data.pages}
