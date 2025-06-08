@@ -24,7 +24,28 @@ const HomeScreen = () => {
   return (
     <>
       {!keyword ? (
-        <ProductCarousel />
+        <>
+          <ProductCarousel />
+          <section className='featured-grid-section'>
+            <p className='featured-p'>featured products</p>
+            <div className='featured-grid'>
+              {data?.products &&
+                [...data?.products]
+                  .slice(-3) // Takes last 3 items
+                  .reverse()
+                  .map((item, i) => {
+                    return (
+                      <div className='home-featured-card'>
+                        <img className='featured-img' src={item.image} alt='' />
+                        <p className='featured-card-p'>
+                          <span className='featued-span' >{item?.name}</span>
+                        </p>
+                      </div>
+                    )
+                  })}
+            </div>
+          </section>
+        </>
       ) : (
         <Link to='/' className='btn btn-light mb-4'>
           Go Back
@@ -39,7 +60,7 @@ const HomeScreen = () => {
       ) : (
         <>
           <Meta />
-          <h1 className='home-h1'>Popular Products</h1>
+          <h1 className='home-h1'>our Products</h1>
           <div className='paginate-custom-container'>
             <Paginate
               pages={data.pages}
