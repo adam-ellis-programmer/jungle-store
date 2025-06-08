@@ -11,6 +11,7 @@ const additionalProducts = [
     countInStock: 3,
     rating: 4.8,
     numReviews: 25,
+    tags: ['laptop', 'professional', 'high-performance'],
   },
   {
     name: 'Samsung 65" 4K Smart TV',
@@ -24,6 +25,7 @@ const additionalProducts = [
     countInStock: 8,
     rating: 4.3,
     numReviews: 18,
+    tags: ['4K', 'smart-tv', 'entertainment'],
   },
   {
     name: 'Nike Air Max 270 Running Shoes',
@@ -37,6 +39,7 @@ const additionalProducts = [
     countInStock: 15,
     rating: 4.6,
     numReviews: 42,
+    tags: ['running', 'athletic', 'comfortable'],
   },
   {
     name: 'Kindle Paperwhite E-reader',
@@ -49,6 +52,7 @@ const additionalProducts = [
     countInStock: 12,
     rating: 4.4,
     numReviews: 67,
+    tags: ['e-reader', 'portable', 'reading'],
   },
   {
     name: 'Bose QuietComfort 45 Headphones',
@@ -62,6 +66,7 @@ const additionalProducts = [
     countInStock: 6,
     rating: 4.7,
     numReviews: 33,
+    tags: ['noise-cancelling', 'wireless', 'premium-audio'],
   },
   {
     name: 'Fitbit Versa 4 Fitness Smartwatch',
@@ -75,6 +80,7 @@ const additionalProducts = [
     countInStock: 9,
     rating: 4.2,
     numReviews: 28,
+    tags: ['fitness-tracker', 'smartwatch', 'health-monitoring'],
   },
   {
     name: 'Stanley Adventure Quencher Tumbler 40oz',
@@ -88,6 +94,7 @@ const additionalProducts = [
     countInStock: 22,
     rating: 4.5,
     numReviews: 156,
+    tags: ['insulated', 'durable', 'hydration'],
   },
   {
     name: 'Instant Pot Duo 7-in-1 Electric Pressure Cooker',
@@ -101,6 +108,7 @@ const additionalProducts = [
     countInStock: 14,
     rating: 4.6,
     numReviews: 89,
+    tags: ['multi-cooker', 'time-saving', 'versatile'],
   },
   {
     name: "Levi's 501 Original Fit Jeans",
@@ -114,6 +122,7 @@ const additionalProducts = [
     countInStock: 18,
     rating: 4.3,
     numReviews: 74,
+    tags: ['classic', 'denim', 'timeless'],
   },
   {
     name: 'Dyson V15 Detect Cordless Vacuum',
@@ -126,6 +135,7 @@ const additionalProducts = [
     countInStock: 4,
     rating: 4.8,
     numReviews: 37,
+    tags: ['cordless', 'powerful-suction', 'advanced-technology'],
   },
   {
     name: 'Sony WH-1000XM4 Noise Canceling Headphones',
@@ -139,6 +149,7 @@ const additionalProducts = [
     countInStock: 8,
     rating: 4.7,
     numReviews: 45,
+    tags: ['noise-cancelling', 'long-battery', 'premium-audio'],
   },
   {
     name: 'iPad Air 10.9-inch Wi-Fi 256GB',
@@ -152,6 +163,7 @@ const additionalProducts = [
     countInStock: 5,
     rating: 4.6,
     numReviews: 38,
+    tags: ['tablet', 'creative', 'portable'],
   },
   {
     name: 'Samsung Galaxy Watch 6 Classic',
@@ -165,6 +177,7 @@ const additionalProducts = [
     countInStock: 12,
     rating: 4.4,
     numReviews: 22,
+    tags: ['smartwatch', 'health-monitoring', 'water-resistant'],
   },
   {
     name: 'Dell XPS 13 Laptop Intel Core i7',
@@ -178,6 +191,7 @@ const additionalProducts = [
     countInStock: 6,
     rating: 4.5,
     numReviews: 31,
+    tags: ['ultrabook', 'portable', 'business'],
   },
   {
     name: 'Nintendo Switch OLED Console',
@@ -190,6 +204,7 @@ const additionalProducts = [
     countInStock: 15,
     rating: 4.8,
     numReviews: 67,
+    tags: ['gaming', 'portable', 'family-friendly'],
   },
   {
     name: 'Apple AirPods Pro 2nd Generation',
@@ -203,6 +218,7 @@ const additionalProducts = [
     countInStock: 18,
     rating: 4.7,
     numReviews: 89,
+    tags: ['wireless-earbuds', 'noise-cancelling', 'spatial-audio'],
   },
   {
     name: 'Microsoft Surface Pro 9',
@@ -216,6 +232,7 @@ const additionalProducts = [
     countInStock: 7,
     rating: 4.4,
     numReviews: 26,
+    tags: ['2-in-1', 'touchscreen', 'productivity'],
   },
   {
     name: 'Google Pixel 8 Pro Smartphone',
@@ -229,6 +246,7 @@ const additionalProducts = [
     countInStock: 11,
     rating: 4.5,
     numReviews: 43,
+    tags: ['smartphone', 'ai-camera', 'android'],
   },
   {
     name: 'JBL Charge 5 Portable Bluetooth Speaker',
@@ -242,6 +260,7 @@ const additionalProducts = [
     countInStock: 14,
     rating: 4.6,
     numReviews: 78,
+    tags: ['bluetooth-speaker', 'waterproof', 'portable'],
   },
   {
     name: 'Anker PowerCore 10000 Portable Charger',
@@ -255,6 +274,7 @@ const additionalProducts = [
     countInStock: 25,
     rating: 4.5,
     numReviews: 156,
+    tags: ['portable-charger', 'compact', 'fast-charging'],
   },
   {
     name: 'Razer DeathAdder V3 Gaming Mouse',
@@ -268,6 +288,7 @@ const additionalProducts = [
     countInStock: 16,
     rating: 4.7,
     numReviews: 34,
+    tags: ['gaming-mouse', 'wireless', 'ergonomic'],
   },
   {
     name: 'LG 27" 4K UltraHD Monitor',
@@ -281,6 +302,7 @@ const additionalProducts = [
     countInStock: 9,
     rating: 4.3,
     numReviews: 47,
+    tags: ['4K-monitor', 'color-accurate', 'usb-c'],
   },
   {
     name: 'Corsair K70 RGB Mechanical Keyboard',
@@ -294,6 +316,7 @@ const additionalProducts = [
     countInStock: 12,
     rating: 4.6,
     numReviews: 91,
+    tags: ['mechanical-keyboard', 'rgb-lighting', 'gaming'],
   },
   {
     name: 'GoPro HERO12 Black Action Camera',
@@ -307,6 +330,7 @@ const additionalProducts = [
     countInStock: 8,
     rating: 4.8,
     numReviews: 62,
+    tags: ['action-camera', 'waterproof', 'stabilization'],
   },
   {
     name: 'Oculus Quest 3 VR Headset',
@@ -320,6 +344,7 @@ const additionalProducts = [
     countInStock: 6,
     rating: 4.4,
     numReviews: 29,
+    tags: ['vr-headset', 'mixed-reality', 'immersive'],
   },
 
   {
@@ -334,6 +359,7 @@ const additionalProducts = [
     countInStock: 19,
     rating: 4.4,
     numReviews: 52,
+    tags: ['wireless-charging', 'fast-charging', 'qi-certified'],
   },
   {
     name: 'SteelSeries Arctis 7P Gaming Headset',
@@ -347,6 +373,7 @@ const additionalProducts = [
     countInStock: 13,
     rating: 4.6,
     numReviews: 68,
+    tags: ['gaming-headset', 'wireless', 'surround-sound'],
   },
   {
     name: 'ASUS ROG Strix GeForce RTX 4070 Graphics Card',
@@ -360,6 +387,7 @@ const additionalProducts = [
     countInStock: 4,
     rating: 4.8,
     numReviews: 23,
+    tags: ['graphics-card', 'ray-tracing', '4K-gaming'],
   },
   {
     name: 'Rode PodMic USB Microphone',
@@ -373,6 +401,7 @@ const additionalProducts = [
     countInStock: 8,
     rating: 4.7,
     numReviews: 45,
+    tags: ['microphone', 'podcasting', 'broadcast-quality'],
   },
   {
     name: 'Garmin Forerunner 965 GPS Smartwatch',
@@ -386,6 +415,7 @@ const additionalProducts = [
     countInStock: 7,
     rating: 4.5,
     numReviews: 34,
+    tags: ['gps-watch', 'running', 'training'],
   },
   {
     name: 'Elgato Stream Deck MK.2',
@@ -399,6 +429,7 @@ const additionalProducts = [
     countInStock: 11,
     rating: 4.6,
     numReviews: 87,
+    tags: ['streaming', 'content-creation', 'customizable'],
   },
   {
     name: 'Western Digital 2TB Portable SSD',
@@ -412,6 +443,7 @@ const additionalProducts = [
     countInStock: 16,
     rating: 4.5,
     numReviews: 73,
+    tags: ['portable-ssd', 'fast-storage', 'encrypted'],
   },
   {
     name: 'Wacom Intuos Pro Digital Drawing Tablet',
@@ -425,6 +457,7 @@ const additionalProducts = [
     countInStock: 9,
     rating: 4.7,
     numReviews: 56,
+    tags: ['drawing-tablet', 'digital-art', 'pressure-sensitive'],
   },
   {
     name: 'Blue Yeti Nano USB Microphone',
@@ -438,6 +471,7 @@ const additionalProducts = [
     countInStock: 21,
     rating: 4.4,
     numReviews: 94,
+    tags: ['usb-microphone', 'compact', 'plug-and-play'],
   },
   {
     name: 'Sonos Era 100 Smart Speaker',
@@ -451,6 +485,7 @@ const additionalProducts = [
     countInStock: 12,
     rating: 4.6,
     numReviews: 48,
+    tags: ['smart-speaker', 'spatial-audio', 'voice-control'],
   },
 
   {
@@ -464,6 +499,7 @@ const additionalProducts = [
     countInStock: 11,
     rating: 4.6,
     numReviews: 78,
+    tags: ['soundbar', 'dolby-atmos', 'surround-sound'],
   },
   {
     name: 'Razer Blade 15 Gaming Laptop',
@@ -477,6 +513,7 @@ const additionalProducts = [
     countInStock: 5,
     rating: 4.7,
     numReviews: 56,
+    tags: ['gaming-laptop', 'high-refresh', 'performance'],
   },
   {
     name: 'Herman Miller Embody Gaming Chair',
@@ -489,6 +526,7 @@ const additionalProducts = [
     countInStock: 7,
     rating: 4.8,
     numReviews: 134,
+    tags: ['ergonomic', 'premium', 'health-focused'],
   },
   {
     name: 'LG C3 65" OLED Smart TV',
@@ -502,6 +540,7 @@ const additionalProducts = [
     countInStock: 6,
     rating: 4.8,
     numReviews: 89,
+    tags: ['oled', 'perfect-blacks', 'ai-processor'],
   },
   {
     name: 'Rode PodMic Dynamic Microphone',
@@ -515,6 +554,7 @@ const additionalProducts = [
     countInStock: 16,
     rating: 4.7,
     numReviews: 167,
+    tags: ['dynamic-microphone', 'podcasting', 'professional'],
   },
   {
     name: 'Secretlab TITAN Evo Gaming Chair',
@@ -528,6 +568,7 @@ const additionalProducts = [
     countInStock: 12,
     rating: 4.6,
     numReviews: 298,
+    tags: ['gaming-chair', 'lumbar-support', 'award-winning'],
   },
   {
     name: 'Shure SM7B Dynamic Microphone',
@@ -540,6 +581,7 @@ const additionalProducts = [
     countInStock: 8,
     rating: 4.9,
     numReviews: 234,
+    tags: ['broadcast-microphone', 'professional', 'studio-quality'],
   },
   {
     name: 'IKEA BEKANT Standing Desk',
@@ -552,6 +594,7 @@ const additionalProducts = [
     countInStock: 19,
     rating: 4.3,
     numReviews: 156,
+    tags: ['standing-desk', 'adjustable-height', 'workspace'],
   },
   {
     name: 'CalDigit TS4 Thunderbolt 4 Dock',
@@ -565,6 +608,7 @@ const additionalProducts = [
     countInStock: 9,
     rating: 4.7,
     numReviews: 93,
+    tags: ['thunderbolt-dock', 'multi-port', 'dual-display'],
   },
 ]
 

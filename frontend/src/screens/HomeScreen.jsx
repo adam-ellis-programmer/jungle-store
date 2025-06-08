@@ -17,7 +17,7 @@ const HomeScreen = () => {
     pageNumber,
   })
   useEffect(() => {
-    window.scrollTo({ top: 0 }) 
+    window.scrollTo({ top: 0 })
     return () => {}
   }, [data])
 
@@ -47,7 +47,8 @@ const HomeScreen = () => {
               keyword={keyword ? keyword : ''}
             />
           </div>
-          <Row>
+          <Row className='g-2.5'>
+            {/* Controls gap for all breakpoints */}
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                 <Product product={product} />
