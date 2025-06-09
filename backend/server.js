@@ -34,11 +34,21 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
   res.setHeader('Access-Control-Allow-Credentials', true)
 
+  //  PREFLIGHT_CHECK
   if (req.method === 'OPTIONS') {
-    res.sendStatus(200)
+    // ✅ TRUE for preflight
+    res.sendStatus(200) // Send 200 OK with CORS headers
+    // NO next() - middleware chain stops here
+    // Request is complete - browser gets permission
   } else {
-    next()
+    next() // This line doesn't execute for OPTIONS   ✅ This executes - continue to API routes
   }
+
+  // SCENARIO 2: Real API Request
+  // Browser sends: POST /api/users/login
+  // req.method === 'OPTIONS' ❌ FALSE (it's 'POST')
+  // Execute: next()
+  // Result: Continue to your actual API route handlers
 })
 
 // body parser middleware
