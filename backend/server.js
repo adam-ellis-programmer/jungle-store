@@ -20,6 +20,7 @@ app.use((req, res, next) => {
     'http://localhost:3000',
     'https://your-vercel-app.vercel.app', // Update with your actual Vercel URL
     'https://jungle-store.vercel.app', // Common pattern, update as needed
+    'https://jungle-store-frontend.vercel.app',
   ]
 
   const origin = req.headers.origin
