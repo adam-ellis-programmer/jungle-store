@@ -257,3 +257,13 @@ table th {
   font-size: 1.7rem;
   margin-bottom: 1.7rem;
 }
+
+.cart-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+}
