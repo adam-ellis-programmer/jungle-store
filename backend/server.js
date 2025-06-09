@@ -14,12 +14,12 @@ import cookieParser from 'cookie-parser'
 const app = express()
 const port = process.env.PORT || 5001
 
-// CORS middleware - Add this BEFORE other middleware
+// CORS middleware
 app.use((req, res, next) => {
   const allowedOrigins = [
     'http://localhost:3000',
-    'https://your-vercel-app.vercel.app', // Update with your actual Vercel URL
-    'https://jungle-store.vercel.app', // Common pattern, update as needed
+    'https://your-vercel-app.vercel.app',
+    'https://jungle-store.vercel.app',
     'https://jungle-store-frontend.vercel.app',
   ]
 
@@ -38,18 +38,10 @@ app.use((req, res, next) => {
   //  PREFLIGHT_CHECK
   if (req.method === 'OPTIONS') {
     // ✅ TRUE for preflight
-    res.sendStatus(200) // Send 200 OK with CORS headers
-    // NO next() - middleware chain stops here
-    // Request is complete - browser gets permission
+    res.sendStatus(200)
   } else {
     next() // This line doesn't execute for OPTIONS   ✅ This executes - continue to API routes
   }
-
-  // SCENARIO 2: Real API Request
-  // Browser sends: POST /api/users/login
-  // req.method === 'OPTIONS' ❌ FALSE (it's 'POST')
-  // Execute: next()
-  // Result: Continue to your actual API route handlers
 })
 
 // body parser middleware
