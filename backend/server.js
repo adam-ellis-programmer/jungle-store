@@ -56,7 +56,7 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// cookie parser m/w
+// cookie parser
 app.use(cookieParser())
 
 connectDB()
