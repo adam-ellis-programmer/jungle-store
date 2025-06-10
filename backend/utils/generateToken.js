@@ -10,9 +10,9 @@ const generateToken = (res, userId) => {
   //  The response object now has a "Set-Cookie" header ready to send
   res.cookie('jwt', token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV !== 'development', // Use secure cookies in production
-    sameSite: process.env.NODE_ENV === 'development' ? 'lax' : 'none', 
-    maxAge: 60 * 60 * 1000, // 1 hour in milliseconds
+    secure: false, // Works with HTTP localhost
+    sameSite: 'lax', // ← Change from 'none' to 'lax'
+    maxAge: 60 * 60 * 1000,
   })
 }
 
