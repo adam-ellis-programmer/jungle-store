@@ -24,10 +24,10 @@ app.use((req, res, next) => {
   ]
 
   const origin = req.headers.origin
-  console.log('🔍 Incoming request:', req.method, req.url)
-  console.log('🔍 Request origin:', origin)
-  console.log('🔍 Origin in allowed list?', allowedOrigins.includes(origin))
-  console.log('🔍 All request headers:', req.headers)
+  // console.log('🔍 Incoming request:', req.method, req.url)
+  // console.log('🔍 Request origin:', origin)
+  // console.log('🔍 Origin in allowed list?', allowedOrigins.includes(origin))
+  // console.log('🔍 All request headers:', req.headers)
   if (allowedOrigins.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin)
   }
