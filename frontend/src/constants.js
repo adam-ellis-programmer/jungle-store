@@ -3,6 +3,9 @@ export const BASE_URL =
     ? 'http://localhost:5001'
     : 'https://jungle-store-server.onrender.com'
 
+// // export const BASE_URL = 'http://localhost:5001'
+// export const BASE_URL = 'https://jungle-store-server.onrender.com'
+
 export const PRODUCTS_URL = '/api/products'
 
 export const USERS_URL = '/api/users'
