@@ -35,7 +35,7 @@ const HomeScreen = () => {
                   .reverse()
                   .map((item, i) => {
                     return (
-                      <div className='home-featured-card'>
+                      <div key={i} className='home-featured-card'>
                         <img className='featured-img' src={item.image} alt='' />
                         <p className='featured-card-p'>
                           <span className='featued-span' >{item?.name}</span>
