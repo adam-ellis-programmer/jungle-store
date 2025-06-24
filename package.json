@@ -10,7 +10,10 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "customStart": "cd backend && node server.js",
+    "customBuild": "cd backend && npm install"
+    
   },
   "author": "Adam Ellis",
   "license": "MIT",
