@@ -1,7 +1,11 @@
+// export const BASE_URL =
+//   process.env.NODE_ENV === 'development'
+//     ? 'http://localhost:5001'
+//     : 'https://jungle-store-server.onrender.com'
 export const BASE_URL =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:5001'
-    : 'https://jungle-store-server.onrender.com'
+    : 'jungle-store-production.up.railway.app'
 
 // export const BASE_URL = 'http://localhost:5001'
 // export const BASE_URL = 'https://jungle-store-server.onrender.com'
