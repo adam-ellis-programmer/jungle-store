@@ -21,7 +21,6 @@ app.use((req, res, next) => {
     'https://your-vercel-app.vercel.app',
     'https://jungle-store.vercel.app',
     'https://jungle-store-frontend.vercel.app',
-    'https://jungle-store-production.up.railway.app',
   ]
 
   const origin = req.headers.origin
